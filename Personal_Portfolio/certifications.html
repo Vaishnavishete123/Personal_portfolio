@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .certifications-page-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center-aligns all content */
+      padding: 0px;
+    }
+    
+    .certifications-section-title h2 {
+  font-size: 36px;
+  margin-top: 10px; /* Reduce space above the title */
+  margin-bottom:10px; /* Reduce space below the title */
+  color: #1db954;
+  text-align: center;
+  width: auto; /* Ensures it doesn't unnecessarily take up extra space */
+}
+
+    
+    .certifications-list {
+      display: grid; /* Use grid layout for precise control over rows and columns */
+      grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+      gap: 20px; /* Space between the cards */
+      justify-content: center; /* Ensures the grid is centered */
+      width: 100%; /* Allows the grid to span the available container width */
+    }
+    
+    .certifications-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; /* Pushes the text to the bottom */
+      border: 1px solid #1db954;
+      border-radius: 10px; /* Rounded corners */
+      background-color: #bbe1f1;
+      color: #fff;
+      overflow: hidden; /* Ensures no content overflows */
+      width: 280px;
+      height: 300px; /* Adjusted for better visuals */
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    
+    .certifications-card img {
+      width: 100%; /* Image covers the card horizontally */
+      height: calc(100% - 40px); /* Leaves space for the text at the bottom */
+      object-fit: cover; /* Ensures the image fits without distortion */
+    }
+    
+    .certifications-card p {
+      font-size: 16px; /* Font size for text */
+      margin: 0;
+      padding: 10px; /* Padding for text at the bottom */
+      background-color: #1db954; /* Green background for text area */
+      text-align: center;
+      color: #fff;
+      width: 100%; /* Ensures text spans the full width */
+      box-sizing: border-box; /* Ensures padding does not affect the width */
+    }
+    
+    .certifications-card:hover {
+      transform: scale(1.05);
+      background-color: #1db954;
+      color: #121212;
+    }
+    
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+      .certifications-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on smaller screens */
+      }
+    
+      .certifications-card {
+        width: 220px; /* Adjusted card size for smaller screens */
+        height: 260px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .certifications-list {
+        grid-template-columns: repeat(1, 1fr); /* 1 card per row on very small screens */
+      }
+    
+      .certifications-card {
+        width: 180px;
+        height: 240px;
+      }
+    
+      .certifications-section-title h2 {
+        font-size: 24px; /* Smaller title size on very small screens */
+      }
+    }
+    </style>
+    
+</head>
+<body>
+  
+    <header>
+        <nav>
+          <div class="logo">
+            <!-- Optional: You can add your logo here -->
+          </div>
+          
+          <ul id="navbar">
+            
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+           
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="experience.html">Work Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="certifications.html">certifications</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="hamburger" onclick="toggleNavbar()">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+     </header>
+     <div class="certifications-page">
+        <div class="certifications-section-title">
+            <h2>Certifications</h2>
+          </div>
+        <div class="certifications-page-container">  
+          <div class="certifications-list">
+            <!-- First Row -->
+            <div class="certifications-card">
+              <img src="/images/c_techno.png" alt="Certification 1">
+              <p>C Language</p>
+            </div>
+            <div class="certifications-card">
+              <img src="/images/c++_techno.png" alt="Certification 2">
+              <p>C++ Language</p>
+            </div>
+            <div class="certifications-card">
+              <img src="/images/java_hackerrank.png" alt="Certification 3">
+              <p>Java</p>
+            </div>
+      
+            <!-- Second Row -->
+            <div class="certifications-card">
+              <img src="/images/ds_techno.png" alt="Certification 4">
+              <p>Data Structure</p>
+            </div>
+            <div class="certifications-card">
+              <img src="/images/ml_aicte.png" alt="Certification 5">
+              <p>Machine Learning</p>
+            </div>
+            <div class="certifications-card">
+              <img src="/images/cloud.png" alt="Certification 6">
+              <p>Cloud Computing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <footer>
+        <div class="footer-container">
+          <div class="footer-content">
+            <p>&copy; 2024 Vaishnavi Chandrakant Shete. All rights reserved.</p>
+            <ul class="footer-social-icons">
+              <li><a href="https://www.linkedin.com/in/vaishnavi-shete-182890295/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+              <li><a href="https://github.com/Vaishnavishete123" target="_blank" title="GitHub"><i class="fab fa-github"></i></a></li>
+              <li><a href="mailto:shetevaishnavi90@example.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></li>
+              <li><a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram-f"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      
+    
+  <script>
+    function toggleNavbar() {
+      const navbar = document.getElementById('navbar');
+      navbar.classList.toggle('active');
+    }
+  </script>
+</body>
+</html> 
