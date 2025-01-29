@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work Experience</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .experience-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+      gap: 20px;
+    }
+
+    .experience-card {
+      display: flex;
+      flex-direction: row;
+      width: 90%;
+      max-width: 800px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .experience-card:hover {
+      transform: scale(1.02);
+    }
+
+    .experience-card .left-section {
+      flex: 1;
+      background-color: #1db954;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .experience-card .right-section {
+      flex: 2;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .right-section h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .right-section p {
+      margin: 5px 0;
+      color: #555;
+      font-size: 16px;
+    }
+    .left-section {
+  flex: 1;
+  background-color: #1db954;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  height: 200px; /* Example fixed height for consistent appearance */
+}
+
+    .certificate-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain; /* Ensures the entire image fits inside the box without cropping */
+  border-radius: 8px;
+}
+
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+      .experience-card {
+        flex-direction: column;
+      }
+
+      .experience-card .left-section {
+        padding: 15px;
+        font-size: 16px;
+      }
+
+      .experience-card .right-section {
+        padding: 15px;
+      }
+
+      .right-section h3 {
+        font-size: 18px;
+      }
+
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <!-- Optional: You can add your logo here -->
+      </div>
+      
+      <ul id="navbar">
+        
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+       
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="experience.html">Work Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="certifications.html">certifications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleNavbar()">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <div class="experience-container">
+    <!-- First Experience Card -->
+    <div class="experience-card">
+      <div class="left-section">
+        <img src="/images/sumago_certificate.jpg" alt="Certificate 1" class="certificate-image">
+      </div>
+      <div class="right-section">
+        <h3>Domain:MERN Stack (Web Development)</h3>
+        <h3>At-Sumago infotech Nashik</h3>
+        <p>Time Period: dec 2023 - jan 2023</p>
+        <p>Work: Developed a web application using MERN stack to streamline the collection and management of patent and
+          copyright data for faculty members, significantly reducing paperwork.</p>
+      </div>
+    </div>
+
+    <!-- Second Experience Card -->
+    <div class="experience-card">
+      <div class="left-section">
+        <img src="/images/internpe.png" alt="Certificate 1" class="certificate-image">
+      </div>
+      <div class="right-section">
+        <h3>Domain: DSA</h3>
+        <h3>At-Internpe</h3>
+        <p>Time Period: 25 dec 2024 - 21 jan 2024</p>
+        <p>Work: Created different program and games using the Data structure.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <p>&copy; 2024 Vaishnavi Chandrakant Shete. All rights reserved.</p>
+        <ul class="footer-social-icons">
+          <li><a href="https://www.linkedin.com/in/vaishnavi-shete-182890295/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/Vaishnavishete123" target="_blank" title="GitHub"><i class="fab fa-github"></i></a></li>
+          <li><a href="mailto:shetevaishnavi90@example.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></li>
+          <li><a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram-f"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script>
+    function toggleNavbar() {
+      const navbar = document.getElementById('navbar');
+      navbar.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
