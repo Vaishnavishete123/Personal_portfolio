@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <script type="text/javascript" src="script.js"></script>  
+  <link rel="stylesheet" href="style.css"> <!-- Linking the external CSS file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+  <style>
+  .view-cv {
+    margin-left: 10px; /* Add some spacing between buttons */
+    background-color: #ff9900; /* Change color for differentiation */
+    color: white;
+    padding: 10px 20px;
+    
+    font-size: 16px;
+   transition: background-color 0.3s ease;
+    display: inline-block;
+   
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+  
+  }
+
+  
+</style>
+</head>  
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <!-- Optional: You can add your logo here -->
+      </div>
+      
+      <ul id="navbar">
+        
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+       
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="experience.html">Work Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="certifications.html">certifications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleNavbar()">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="intro">
+      <h1>Hello! I Am <br><span class="highlight">Vaishnavi Shete</span></h1>
+      <p>
+        Final-year computer engineering student with robust foundational knowledge in software development and problem
+        solving.Proficient in multiple programming languages like C, C++, and Java.Looking for an exciting opportunity
+         in the software industry.I'm a Web Developer with expertise in creating fully responsive websites and backend integration.
+      </p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/vaishnavi-shete-182890295/" target="_blank" class="social"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Vaishnavishete123" target="_blank" class="social"><i class="fab fa-github"></i></a>
+        <a href="https://leetcode.com/u/vaishnavi_shete/" target="_blank" class="social"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.hackerrank.com/profile/shetevaishnavi90" target="_blank" class="social"><i class="fa-brands fa-hackerrank"></i></a>
+      </div>
+      <a href="contact.html" class="btn">Hire Me</a>
+      <a href="/images/resume_final4.pdf" class="btn view-cv" download="Vaishnavi_Shete_CV.pdf">Download CV</a> <!-- CV Button -->
+    </div>
+    <div class="avatar">
+      <img src="/images/my_photo.JPG" alt="Vaishnavi's Photo">
+    </div>
+  </section>
+  
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <p>&copy; 2024 Vaishnavi Chandrakant Shete. All rights reserved.</p>
+        <ul class="footer-social-icons">
+          <li><a href="https://www.linkedin.com/in/vaishnavi-shete-182890295/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/Vaishnavishete123" target="_blank" title="GitHub"><i class="fab fa-github"></i></a></li>
+          <li><a href="mailto:shetevaishnavi90@example.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></li>
+          <li><a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram-f"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script>
+    function toggleNavbar() {
+      const navbar = document.getElementById('navbar');
+      navbar.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
