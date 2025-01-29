@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+/* Projects Page Specific Styles */
+.projects-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+}
+
+.projects-section h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #1db954;
+  text-align: center;
+}
+
+/* Grid layout for project cards */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Individual project card styles */
+.project-card {
+  background: #bbe1f1;
+  border: 1px solid #1db954;
+  border-radius: 8px;
+  overflow: hidden;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 380px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Project image styling */
+.project-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Project description styling */
+.project-description {
+  padding: 10px;
+}
+
+.project-description h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #161716;
+}
+
+.project-description p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #110f0f;
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr; /* Stacks cards vertically on small screens */
+  }
+
+  .project-card {
+    height: auto; /* Adjust height for smaller screens */
+  }
+}
+
+  </style>
+</head>
+<body>
+  
+    <header>
+        <nav>
+          <div class="logo">
+            <!-- Optional: You can add your logo here -->
+          </div>
+          
+          <ul id="navbar">
+            
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+           
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="experience.html">Work Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="certifications.html">certifications</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="hamburger" onclick="toggleNavbar()">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+     </header>
+     <div class="projects-section">
+        <div class="projects-container">
+          <!-- Project Card 1 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/images/resume_parser_home.jpg" alt="Project 1 Homepage">
+            </div>
+            <div class="project-description">
+              <h3>Project 1: Resume Parser Using An AI</h3>
+              <p>
+                <strong>Concept:</strong> Currently developing an AI-based system to accurately parse resumes, aiming to improve efficiency in the resume
+                screening process. Enhancing candidate-job matching by identify and align candidate skills with job requirements..<br>
+                <strong>Technology:</strong> React/Angular,Python,Machine Learning.
+              </p>
+            </div>
+          </div>
+    
+          <!-- Project Card 2 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/images/patent.png" alt="Project 2 Homepage">
+            </div>
+            <div class="project-description">
+              <h3>Project 2: Patent Manager System </h3>
+              <p>
+                <strong>Concept:</strong> Developed a web application using MERN stack to streamline the collection and management of patent and
+                copyright data for faculty members, significantly reducing paperwork. <br>
+                <strong>Technology:</strong> React, Node.js, MongoDB.
+              </p>
+            </div>
+          </div>
+    
+          <!-- Project Card 3 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/images/book_shelf.png" alt="Project 3 Homepage">
+            </div>
+            <div class="project-description">
+              <h3>Project 3: Bookshelf Management System</h3>
+              <p>
+                <strong>Concept:</strong>Developed a comprehensive and user-friendly platform for bookstore sellers to efficiently manage and organize
+                their inventory and tracking, categorization, and sales management to streamline operations.<br>
+                <strong>Technology:</strong> Java, Servlet ,jsp,Html,css.
+              </p>
+            </div>
+          </div>
+    
+          <!-- Project Card 4 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/images/portfolio.png" alt="Project 4 Homepage">
+            </div>
+            <div class="project-description">
+              <h3>Project 4: Personal Portfolio</h3>
+              <p>
+                <strong>Concept:</strong> compilation of academic and professional materials that exemplifies my  skills, qualifications, education, training, and experiences..<br>
+                <strong>Technology:</strong> Html ,Css ,Javascript
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+      <footer>
+        <div class="footer-container">
+          <div class="footer-content">
+            <p>&copy; 2024 Vaishnavi Chandrakant Shete. All rights reserved.</p>
+            <ul class="footer-social-icons">
+              <li><a href="https://www.linkedin.com/in/vaishnavi-shete-182890295/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+              <li><a href="https://github.com/Vaishnavishete123" target="_blank" title="GitHub"><i class="fab fa-github"></i></a></li>
+              <li><a href="mailto:shetevaishnavi90@example.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></li>
+              <li><a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram-f"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      
+    
+  <script>
+    function toggleNavbar() {
+      const navbar = document.getElementById('navbar');
+      navbar.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
